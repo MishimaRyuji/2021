@@ -185,18 +185,55 @@ h2 {
 
 @media screen {
   body {
-    background-color: red;
+    background-color: rgb(245, 243, 241);
   }
 }
 
-@media screen and (min-width: 301px) and (max-width: 600px)  {
+
+
+@media screen  {
+
   body {
-    background-color: blue;
+  }
+  .title{
+    font-size: 50px;
+  } 
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px)  {
+  body {
+  }
+  .title{
+    font-size: 50px;
   }
 }
 
-@media screen and (max-width: 300px) {
+
+@media screen and (max-width: 599px)  {
   body {
-    background-color: green;
   }
+  .title{
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 520px)  {
+  .image{
+    width: 100%;
+  }
+}
+@keyframes myframe {
+  from {
+    color: rgb(235, 132, 132);
+    font-size: 30pt;
+  }
+  to {
+    color: rgb(247, 14, 14);
+    font-size: 40pt;
+  }
+}
+.test {
+  position: absolute;
+  animation: myframe 0.5s ease-in 1s infinite alternate both;
 }
